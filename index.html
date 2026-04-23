@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>SimuladorPedido</title>
+</head>
+<body>
+    <!--Container principal da página-->
+    <div class "container">
+      <h1> 🍟 Simulador de Pedido TDS261T </h1>
+     <!--Subtitulo-->
+     <p class= "subtitulo">
+        Bem-Vindo a lancheria do TDS!!! Aqui você come mais e paga menos🥺🤌🤌
+     </p>
+     <!-- Área que contém todos os produtos -->
+    <div class="cards"> 
+        <!--CARD = UM PRODUTO-->
+        <!--Usamos label para que clicar no card marque checkbox-->
+        <label class="card">
+            <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="hamburguer">
+                 <!--Descrição-->
+                <h2> hambúrguer </h2>
+                <!--Imagem do produto-->
+                <img src="Asserts/burguer.png" alt="hamburguer">
+                <!--Nome do produto-->
+                <p> Pão, Carne, Queijo, Tomate, Alface e Maionese </p>
+                <!--Preço-->
+                <span>  R$ 32,50 </span>
+        </label>
+
+         <label class="card">
+            <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="batata">
+                <!--Descrição-->
+                <h2> Batata Frita </h2>
+                <!--Imagem do produto-->
+                <img src="Asserts/batata.png" alt="Batata Frita">
+                <!--Nome do produto-->
+                <p> Batata Frita (P)</p>
+                <!--Preço-->
+                <span>  R$ 16,50 </span>
+                
+        </label>
+        <!-- nuggets-->
+
+         <label class="card">
+            <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="nuggets">
+                <!--Descrição-->
+                <h2> Nuggets (P) </h2>
+                <!--Imagem do produto-->
+                <img src="Asserts/nuggets.png" alt="nuggets">
+                <!--Nome do produto-->
+                <p> Nuggets 8 unidades </p>
+                <!--Preço-->
+                <span>  R$ 20,00 </span>
+        </label>
+
+         <label class="card">
+            <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="refrigerante">
+                <!--Descrição-->
+                <h2> refrigerante </h2>
+                <!--Imagem do produto-->
+                <img src="Asserts/refrigerante.png" alt="refrigerante">
+                <!--Nome do produto-->
+                <p> refrigerante </p>
+                <!--Preço-->
+                <span>  R$ 8,00 </span>
+        </label>
+
+          <label class="card">
+            <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="pizza">
+                <!--Descrição-->
+                <h2> Pizza </h2>
+                <!--Imagem do produto-->
+                <img src="Asserts/pizza.png" alt="Pizza">
+                <!--Nome do produto-->
+                <p> Pizza </p>
+                <!--Preço-->
+                <span>  R$ 20,00 </span>
+        </label>
+
+          <label class="card">
+            <!--Checkbox que identifica se o item esta selecionado-->
+            <input type="checkbox" id="sorvete">
+                <!--Descrição-->
+                <h2> sorvete </h2>
+                <!--Imagem do produto-->
+                <img src="Asserts/sorvete.png" alt="sorvete">
+                <!--Nome do produto-->
+                <p> sorvete </p>
+                <!--Preço-->
+                <span>  R$ 20,00 </span>
+        </label>
+
+    </div>
+    <!--botao que chama a funcao calcular para somar o pedido-->
+    <button onclick="calcular()"> Calcular Pedido</button>
+    <!--area de resultado do pedido-->
+    <div id="resultado" class="resultado"></div>
+</div>
+</body>
+
+</html>
