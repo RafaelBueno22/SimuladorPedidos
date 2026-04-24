@@ -1,9 +1,9 @@
 body{
     margin: 0;
     /*fonte do texto*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(245, 158, 11);
-    color:rgb(55, 105, 105);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #01214e;
+    color:rgb(0, 0, 0);
 
 }
 /*container central da página*/
@@ -12,15 +12,16 @@ body{
     margin: 30px auto; /*centraliza*/
     padding: 20px; 
     text-align: center;
+    color:aliceblue
 }
 h1{
     text-align: center;
-    color: RGB(200, 200, 200);
+    color:aliceblue;
 
 }
 .subtitulo{
     text-align: center;
-    color: rgb(37, 66, 66);
+    color: rgb(233, 255, 255);
     margin-bottom: 30px;
 }
 /* area dos cards*/
@@ -33,25 +34,28 @@ h1{
 }
 .card{
     width: 220px;
-    background-color: RGB(25, 42, 86);
+    background-color:#FFB703;
     border-radius: 16px;/* arredonda as bordas*/
     padding: 15px;
-    box-shadow: 0 4px 12px rgb(55, 105, 105);
+    box-shadow: 0 4px 12px rgb(51, 76, 158);
     cursor: pointer; 
+    text-align: center;
     /* animacao */
     transition: trasnform 0.2s;
     position: relative;
+    color:rgb(0, 0, 0)
 
 }
 /*efeito de passar o mouse*/
 .card:hover{
-    transform: scale(1.03)
+    transform: scale(1.05)
 }
 /*checkbox dentro do card*/
 .card input{
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 20px;
+    left: 20px;
+    
 
 }
 /* imagem */
@@ -64,50 +68,39 @@ h1{
 }
 /*nome produto*/
 .card h2{
-color: rgb(102, 131, 185);
+color: rgb(39, 41, 165);
 
 }
 /*preço*/
 .card span{
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(45, 62, 161);
 
 }
 /*botao*/
 button {
-    /*margin-top: 30px;
-    padding: 14px 28px;
-    background-color: rgb(52, 197, 197);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;*/
-     margin-top: 30px;
+    
+  display: block;
+  margin: 30px auto ;
   padding: 14px 28px;
-
-  background: #2e7d32;
-  color: white;
-
+  background:#b42400;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 10px;
-
   cursor: pointer;
-
+  
 }
+button:hover {
+transform: scale(1.05);
+}
+
 /*resultado*/
 .resultado {
-    /*margin-top: 30px;
-    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    background-color: #ebb221;
     padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgb(12, 12, 12);
-    text-align: left;*/
- margin-top: 30px;
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-
-  /* sombra leve */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
-  text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgb(51, 76, 158);
+    text-align: left;
+    color:rgb(39, 41, 165)
 }
